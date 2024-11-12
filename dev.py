@@ -42,9 +42,10 @@ xs = np.array(xs)
 vs = np.array(vs)
 ts = np.array(ts)
 
-fig,ax = plt.subplots(figsize=(6,5),dpi=150)
-plt.subplots_adjust(wspace=0.3, hspace=0.3)
-ax1 = fig.add_subplot(1,1,1)
+fig = plt.figure(figsize=(6,5),dpi=150)
+plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
+
+ax1 = fig.add_subplot(2,1,1)
 ax1.scatter(ts,xs)
 ax1.set_ylabel('Posición')
 
